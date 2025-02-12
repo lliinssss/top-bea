@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=04fcaae6-825a-469a-86fe-eabc5755edd4&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+
+    <section class="section_1">
+            <form action="/search" method="get" class="form_search">
+                <input placeholder="Поиск" type="search" class="input_search" id="search" oninput="showSuggestions(this.value)">
+                <div class="suggestions" id="suggestions"></div>
+                <button type="submit" class="button_search" style="padding: 2px 0 0 0;" id="searchButton"><img src="lupa.png" style="width: 20px; height: 20px;"></button>
+            </form>
+            <div class="div_section_1">
+                <button class="button_section_1" id="button_main_page">Главная</button>
+                <button class="button_section_1" id="button_about_us">О нас</button>
+                <button class="button_section_1" id="button_contacts">Контакты</button>
+            </div>
+
+            <button class="account" id="button_account">
+            <img src="account.png"></button>
+    </section>
+
+
+    <div class="invis_div" id="invis_div"></div>
+
+
+    <section class="section_2" id="section_2">
+        <img src="logo.png" class="img_logo">
+        <h1 class="h1_section_2">КРАСОТА СОЗДАЕТСЯ ЗДЕСЬ!</h1>
+        <p class="p_section_2">Мы предлагаем широкий спектр услуг: стрижки, укладки, маникюр и косметические процедуры. 
+            Наша команда профессионалов использует только качественные материалы, чтобы подчеркнуть вашу индивидуальность.
+            Погрузитесь в атмосферу уюта и заботы — запишитесь на процедуру уже сегодня и раскройте свою красоту!</p>
+        <button class="button_section_2" id="button_contact_us">CONTACT US</button>
+    </section>
+
+
+    <section class="section_3">
+        <h1 class="h1_section_3">Чем мы занимаемся</h1>
+        <div class="div_section_3_headers">
+            <h2 class="h2_section_3">Skin care</h2>
+            <h2 class="h2_section_3">Manicure</h2>
+            <h2 class="h2_section_3">Haircut</h2>
+            <h2 class="h2_section_3">Styling</h2>
+        </div>
+        <div class="div_section_3_text">
+            <p class="p_section_3">В нашем салоне мы предлагаем профессиональный уход за кожей, 
+            который включает в себя очищение, пилинг и  увлажнение.</p>
+            <p class="p_section_3">Наши мастера помогут вам подчеркнуть вашу красоту.
+             Мы предлагаем французский маникюр, а также наращивание ногтей.</p>
+            <p class="p_section_3">Мы предлагаем профессиональные услуги стрижки​. Опытные мастера помогут Вам подобрать идеальную стрижку.</p>
+            <p class="p_section_3">Стилисты создадут идеальную укладку для любого мероприятия. 
+            Мы используем только качественный стайлинг, заботясь о ваших волосах. </p>
+        </div>
+    </section>
+    
+    
+    <section class="section_4" id="section_4">
+        <p>THE PERFECT LOOK</p>
+        <h1 class="h1_section_4">Наши услуги</h1>
+        <div class="div_section_4">
+
+            <div class="div_section_4_0">
+                <img class="img_section_4" src="https://avatars.mds.yandex.net/i?id=2a2bd3ac21704a1bb52afb268cc3116d_l-10284885-images-thumbs&ref=rim&n=13&w=800&h=800">
+                <div class="hidden_text_section_4"><p>Маникюр</p></div>
+            </div>
+
+            <div class="div_section_4_0">
+                <img class="img_section_4" src="haircut.jpg">
+                <div class="hidden_text_section_4"><p>Стрижки</p></div>
+            </div>
+
+            <div class="div_section_4_0">
+                <img class="img_section_4" src="face_treat.jpg">
+                <div class="hidden_text_section_4"><p>Процедуры для лица</p></div>
+            </div>
+
+            </div>
+        <div class="div_section_4_1">   
+
+            <div class="div_section_4_0">
+                <img class="img_section_4" src="massage.jpeg">
+                <div class="hidden_text_section_4"><p>Массаж</p></div>
+            </div>
+            <div class="div_section_4_0">
+                <img class="img_section_4" src="pedicure.jpg">
+                <div class="hidden_text_section_4"><p>Педикюр</p></div>
+                </div>
+                <div class="div_section_4_0">
+                <img class="img_section_4" src="styling.jpg">
+                <div class="hidden_text_section_4"><p>Укладки</p></div>
+</div>
+
+        </div>
+    </section>
+
+
+    <section class="section_5">
+       <div class="div_section_5_img"> <img class="img_section_5" src="image.png">
+       </div> <div class="div_section_5">
+            <p>FACE TREATMENTS</p>
+            <h2 class="h2_headers">​Massage and relaxation</h2>
+            <p>Данная процедура помогает улучшить микроциркуляцию и подтянуть овал лица, 
+                обеспечивая здоровый цвет кожи и расслабление. 
+                Каждая процедура адаптируется под индивидуальные потребности клиента
+                для достижения наилучших результатов.</p>
+            <button class="button_service" onclick="window.location='login.html'">Записаться</button>
+        </div>
+    </section>
+
+
+    <section class="section_6">
+        <div class="div_section_6">
+            <p>BODY MASSAGE</p>
+            <h2 class="h2_headers">​Massage</h2>
+            <p>Каждая процедура направлена на улучшение кровообращения​, снятие мышечного напряжения и общее 
+                оздоровления организма. Расскажите массажисту о своих предпочтениях, 
+                а также выберите длительность процедуры, и мастер позаботится о расслаблении вашего тела.</p>
+            <button class="button_service" onclick="window.location='login.html'">Записаться</button>
+        </div>
+        <div class="div_section_5_img"><img class="img_section_6" src="https://img.freepik.com/free-photo/picture-beautiful-woman-massage-salon_155003-5900.jpg?uid=R181383073&ga=GA1.1.1369015464.1735823180&semt=ais_hybrid">
+        </div> </section>
+
+
+    <section class="section_7">
+        <div class="div_section_5_img"><img class="img_section_7" src="https://modnica.club/uploads/posts/2023-09/1695184668_modnica-club-p-parikmakher-57.jpg">
+        </div><div class="div_section_7">
+            <p>HAIRCUTS</p>
+            <h2 class="h2_headers">​Listening is everything</h2>
+            <p>Консультация с нашими специалистами даст возможность подобрать идеальную стрижку для вашего образа. 
+                Парикмахеры нашего салона выслушают все ваши предпочтения и дадут советы по уходу за волосами.</p>
+            <button class="button_service" onclick="window.location='login.html'">Записаться</button>
+    </section>
+
+
+    <section class="section_8">
+        <div class="div_section_8">
+            <p>ABOUT US</p>
+            <h1 style="margin-top: 90px; font-size: xx-large;">Supporting</h1>
+            <p>Мы помогаем некоммерческим организациям получить доступ к финансированию, инструментам, 
+                обучению и поддержке, необходимым для того, чтобы стать более эффективными.</p>
+            
+        </div>
+        <div class="div_section_8_1">
+        <h1>Innovation technology</h1>
+        <p>Всегда появляются новые технологии, внедряющиеся в работу салонов. мы проводим ежемесячные форумы 
+            внутри нашей компании про новые тхнологии.</p>
+            <h1>Developing equipment</h1>
+            <p>Также качественное оборудование всегда должно присутствовать в каждом продуманном бизнесе, связанным с уходовыми 
+                процедурами.
+            </p>
+                <h1>​Revolutionary Skincare</h1>
+                <p>И безусловно, профессионалы должны использовать в своей работе только качественные 
+                    продукты, проходящие неоднократные анализы.</p>
+                
+        </div>
+    </section>
+
+
+    <section class="section_9">
+        <h1 style="font-size: 36px; font-family: 'Montserrat'; font-weight: 600;">Присоединяйся к нам!</h1>
+        <div class="div_blank">
+            <div style="display: flex; flex-direction: column;">
+            <p style="color: black;">Имя</p>
+            <input placeholder="Введите ваше ФИО" class="input_name"></div>
+            <div style="display: flex; flex-direction: column;">
+            <p style="color: black;">Номер телефона</p>
+            <input placeholder="Номер начинается с +7" class="input_phone"></div>
+            <!-- О себе -->
+            <!-- <textarea rows="8" cols="60" placeholder="Оставьте комментарий о себе и своем опыте работы" class="input_about"></textarea> -->
+            <button class="button_blank">Отправить</button>
+        </div>
+    </section>
+
+    <section class="section_10" id="section_10">
+        <div style="display: flex; flex-direction: column;">
+        <h1 class="h1_section_10" style="font-weight: 650; font-size: 32px; color: white;">Связаться с нами</h1>
+        
+
+        
+        <div class="div_section_10">
+            <img src="phone.png" class="img_section_10">
+            <p>8-499-000-00-00</p>
+        </div>
+        <div class="div_section_10">
+            <img src="tg.png"  class="img_section_10">
+            <p>@toptopbeauty</p>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AYOUR_MAP_ID&width=700&height=400&lang=ru_RU&scroll=true"></script>
+    </div>
+        
+
+    </section>
+
+    <section class="section_11">
+        Сайт создан в целях школьного проекта
+    </section>
+
+
+
+    <div class="div_login" id="div_login">
+
+        <h1 style="color: white;">Вход</h1>
+       
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" required name="email" class="input_login">
+        <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 5px;"><input type="checkbox" style="width: 15px; height: 15px; border-radius: 5px;  margin-top: 20px;"><p>Я хочу получать актуальные письма</p></div>
+        <button type="submit" id="LogBtn" class="button_service" style="margin-top: 10px;">Войти</button>
+  
+    </div>
+
+
+</body>
+</html>

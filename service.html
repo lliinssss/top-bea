@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body class="body_service">
+    <button class="floating-button" id="BackBtn" onclick="window.location='index.html'">Вернуться</button>
+
+    <div id="serviceModal" class="modal hidden">
+        <div class="modal-content">
+        
+
+            <h1 style="flex: auto; text-align: center; margin-bottom: 40px; text-shadow: 1px 4px 9px #78175d;">Запись</h1>
+            
+            <form id="serviceForm" >
+                <label for="service_name" style="color: #78175d;">Услуга</label>
+                <div for="service_name">
+                    <select id="select_service" class="input_service">
+                        <option selected disabled></option>
+                        <option value="">Маникюр женский</option>
+                        <option value="">Педикюр женский</option>
+                        <option value="">Маникюр мужской</option>
+                        <option value="">Педикюр мужской</option>
+                        <option value="">Макияж</option>
+                        <option value="">Макияж вечерний</option>
+                        <option value="">Стрижка детская</option>
+                        <option value="">Стижка женская</option>
+                        <option value="">Стрижка мужская</option>
+                        <option value="">Массаж тела</option>
+                        <option value="">Массаж ног</option>
+                      </select>
+                </div>
+                <label for="service_data" style="color: #78175d;">Выберите дату и время</label>
+                <input type="datetime-local" id="service_data" required name="password" class="input_service">
+                <button type="submit" id="NoteBtn">Записаться</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
